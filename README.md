@@ -1,4 +1,4 @@
-# 🔍 FinSight RAG — Financial Document Intelligence
+# FinSight RAG — Financial Document Intelligence
 
 > **Module 1 of [FinSight AI](#finsight-ai-platform)** — a personal financial intelligence platform built for real investment research.
 
@@ -6,15 +6,15 @@ Upload any SEC filing, annual report, or financial PDF and ask plain-English que
 
 ---
 
-## 💡 Why I Built This
+## Why I Built This
 
-As someone learning to invest, I found financial documents overwhelming — 10-Ks run 80+ pages of dense legal and financial language. I wanted a way to ask plain-English questions and get answers backed by the actual document, not generic AI responses from training data.
+As someone learning to invest, I found financial documents overwhelming; 10-Ks run 80+ pages of dense legal and financial language. I wanted a way to ask plain-English questions and get answers backed by the actual document, not generic AI responses from training data.
 
 This project solves that. It also demonstrates a production-ready RAG (Retrieval-Augmented Generation) architecture — the same pattern used by financial services companies like Wells Fargo, Bank of America, and Truist to build document intelligence systems at scale.
 
 ---
 
-## 🎯 What It Does
+## What It Does
 
 - Upload **any financial PDF** — 10-K, annual report, earnings release, S-1
 - Ask **plain-English questions** about the document
@@ -25,7 +25,7 @@ This project solves that. It also demonstrates a production-ready RAG (Retrieval
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User uploads PDF
@@ -61,11 +61,11 @@ Chunks overlap by 200 characters to prevent information loss at boundaries — a
 The system prompt explicitly restricts Claude to only use retrieved document excerpts, preventing hallucination from training data. If the answer isn't in the document, Claude says so.
 
 **Provider-agnostic design**
-The embedding layer (ChromaDB) and LLM layer (Anthropic) are separated and independently swappable. Switching to AWS Bedrock or Azure OpenAI requires changing one line of configuration — important for enterprise deployment where the LLM provider is often dictated by security policy.
+The embedding layer (ChromaDB) and LLM layer (Anthropic) are separated and independently swappable. Switching to AWS Bedrock or Azure OpenAI requires changing one line of configuration; important for enterprise deployment where the LLM provider is often dictated by security policy.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -78,7 +78,7 @@ The embedding layer (ChromaDB) and LLM layer (Anthropic) are separated and indep
 
 ---
 
-## 📋 Example Questions
+## Example Questions
 
 Once you upload a 10-K or annual report, try asking:
 
@@ -92,7 +92,7 @@ Once you upload a 10-K or annual report, try asking:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.12
@@ -150,7 +150,7 @@ finsight-rag/
 
 ---
 
-## 🧠 How RAG Works (Plain English)
+## How RAG Works (Plain English)
 
 **The problem with asking an LLM about a document directly:**
 You'd have to send the entire document every time you ask a question. A single 10-K can be 150,000+ tokens — expensive, slow, and hits context window limits.
@@ -169,7 +169,7 @@ You'd have to send the entire document every time you ask a question. A single 1
 
 ---
 
-## 🔗 FinSight AI Platform
+## FinSight AI Platform
 
 This project is **Module 1** of FinSight AI — a suite of AI tools for personal investment research.
 
@@ -185,7 +185,7 @@ This project is **Module 1** of FinSight AI — a suite of AI tools for personal
 
 ## 👤 Author
 
-**Parth Patel** — Software Engineer transitioning into AI/ML Engineering
+**Parth Patel** — Software Engineer transitioning into AI Engineering
 
 - LinkedIn: [linkedin.com/in/parth-p75](https://linkedin.com/in/parth-p75)
 - GitHub: [github.com/PPatel98](https://github.com/PPatel98)
